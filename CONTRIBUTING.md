@@ -3,7 +3,7 @@
 ## Installation
 
 * `git clone <repository-url>`
-* `cd ember-modal`
+* `cd ember-addon-boilerplate`
 * `yarn install`
 
 ## Linting

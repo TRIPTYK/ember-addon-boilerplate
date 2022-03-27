@@ -1,1 +1,1 @@
-export { default } from '@triptyk/ember-modal/modifiers/focus-trap';
+export { default } from '@triptyk/ember-addon-boilerplate/modifiers/focus-trap';

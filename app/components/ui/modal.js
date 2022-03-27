@@ -1,1 +1,1 @@
-export { default } from '@triptyk/ember-modal/components/ui/modal';
+export { default } from '@triptyk/ember-addon-boilerplate/components/ui/modal';

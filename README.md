@@ -1,4 +1,4 @@
-ember-modal
+ember-addon-boilerplate
 ==============================================================================
 
 This addon will give you a simple modal mechanic
@@ -17,11 +17,11 @@ Installation
 ------------------------------------------------------------------------------
 
 ```zsh
-ember install @triptyk/ember-modal
+ember install @triptyk/ember-addon-boilerplate
 ```
 OR
 ```zsh
-pnpm add -D @triptyk/ember-modal
+pnpm add -D @triptyk/ember-addon-boilerplate
 ```
 
 
@@ -57,7 +57,7 @@ Arguments :
 
 
 
-For the extended syntax, [see examples](/packages/ember-modal/tests/dummy/app/components/ui-show.hbs).
+For the extended syntax, [see examples](/packages/ember-addon-boilerplate/tests/dummy/app/components/ui-show.hbs).
 
 Default tailwind style example : 
 
