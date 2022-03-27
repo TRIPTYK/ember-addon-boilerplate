@@ -11,23 +11,6 @@ concurrency:
    cancel-in-progress: true
 
 jobs:
-  lint:
-    name: "Lint"
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-      - name: Install Node
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16.x
-      - name: Install pnpm
-        run: npm i -g pnpm
-      - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
-      - name: Lint
-        run: pnpm lint
-
   test:
     name: "Test"
     runs-on: ubuntu-latest
