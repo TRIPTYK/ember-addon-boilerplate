@@ -1,0 +1,40 @@
+{{#if @isOpen}}
+  {{#in-element this.modalContainer}}
+    <div
+      class='tpk-modal-container'
+      role='dialog'
+      aria-labelledby={{@title}}
+      {{on-escape @onClose}}
+      {{focus-trap}}
+      ...attributes
+    >
+      {{! Waiting for the backdrop filter css attribute }}
+      <div class={{concat 'tpk-modal-cover ' @coverClass}}></div>
+      {{#if (has-block)}}
+        {{#if (has-block-params)}}
+          {{yield
+            (hash
+              Content=(component
+                'ui/modal/content' title=@title isOpen=@isOpen onClose=@onClose
+              )
+            )
+          }}
+        {{else}}
+          <Ui::Modal::Content
+            @title={{@title}}
+            @isOpen={{@isOpen}}
+            @onClose={{@onClose}}
+          >
+            {{yield}}
+          </Ui::Modal::Content>
+        {{/if}}
+      {{else}}
+        <Ui::Modal::Content
+          @title={{@title}}
+          @isOpen={{@isOpen}}
+          @onClose={{@onClose}}
+        />
+      {{/if}}
+    </div>
+  {{/in-element}}
+{{/if}}
