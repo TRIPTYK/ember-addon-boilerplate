@@ -1,11 +1,31 @@
-ember-addon-boilerplate
-==============================================================================
+# @triptyk/ember-addon-boilerplate
 
 Typescript ember addon with Tailwindcss boilerplate
 
-Compatibility
-------------------------------------------------------------------------------
+## Compatibility
 
-* Ember.js v3.24 or above
-* Ember CLI v3.24 or above
-* Node.js v12 or above
+* Ember.js v3.28 or above
+* Ember CLI v3.28 or above
+* Node.js v14 or above
+
+
+## Installation
+
+```
+ember install @triptyk/ember-addon-boilerplate
+```
+
+
+## Usage
+
+[Longer description of how to use the addon in apps.]
+
+
+## Contributing
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
+
+## License
+
+This project is licensed under the [MIT License](LICENSE.md).
