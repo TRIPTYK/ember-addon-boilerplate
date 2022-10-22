@@ -3,6 +3,10 @@
 const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
 module.exports = function (defaults) {
+  process.on('uncaughtException', (e) => {
+    console.error(e);
+  });
+
   let app = new EmberAddon(defaults, {
     postcssOptions: {
       compile: {
