@@ -14,7 +14,7 @@
   },
   "[handlebars]": {
     "editor.bracketPairColorization.enabled": true,
-    "editor.defaultFormatter": "embertooling.prettier-for-handlebars-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   // show eslint icon at bottom toolbar
   "eslint.alwaysShowStatus": false,
